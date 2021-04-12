@@ -1,0 +1,152 @@
+section#contact1 {
+  padding: 5rem 5rem 15rem 5rem;
+  background: $reallylight;
+}
+
+.contact__me {
+  margin-bottom: 5rem;
+  & h1, 
+  & h2{
+     text-align: center;
+  }
+  & h1{
+    position: relative;
+    max-width: 300px;
+    text-align: center;
+    margin: -4.5rem auto 0 auto;
+    padding-left: 30px;
+
+    &:before{
+      content: "";
+      display:block;
+      width: 80px;
+      height:4px;
+      background: black;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: -2;
+
+    }
+
+  }
+}
+
+.contact {
+  margin: 1rem;
+
+}
+
+
+.contact__right{
+  flex: 2;
+}
+
+.contact__left {
+  flex: 1;
+  padding-left: 4rem;
+  line-height: 3;
+  font-size: 1.1rem;
+  & li{
+    text-decoration: none;
+    list-style: none;
+  }
+  & .fas,
+  & .far{
+    margin-right: 1rem;
+  }
+}
+
+input#name,
+input#email,
+textarea#message {
+  width: 80%;
+  line-height: 4;
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+
+}
+
+
+input#name::placeholder,
+input#email::placeholder,
+textarea#message::placeholder {
+  color:$darkest;
+}
+
+button#submit-btn {
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+  background: $dark;
+  color: $verylight;
+  font-size: 1rem;
+  &:hover{
+    color: $darkest;
+    background: $light;
+  }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#contact__me.flex {
+  @include breakpoint-down (medium) {
+    flex-direction: column-reverse;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+}
+
+section#contact1 {
+  @include breakpoint-down (medium) {
+    padding: 5rem 3rem 15rem 3rem;
+  }
+}
+
+section#contact1 {
+  @include breakpoint-down (small) {
+    padding-left: 2rem;
+  }
+}
+
+input#name, input#email, textarea#message {
+  @include breakpoint-down (medium){
+    width: 100%;
+  } 
+}
+
+.contact__left{
+  @include breakpoint-down (small){
+    padding-left: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+ul {
+  @include breakpoint-down (small){ 
+  padding-left: 0;
+  }
+}
+
+input#name, input#email, textarea#message{
+  @include breakpoint-down (small){
+    margin: 1rem 0;
+  }
+}
+
+.contact {
+  @include breakpoint-down (small){
+    margin: 0;
+  }
+}
+
+.alert.alert-success {
+  color: $dark;
+  font-size: 1rem;
+}

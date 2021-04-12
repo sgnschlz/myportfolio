@@ -1,0 +1,43 @@
+#preloader {
+  background-color: $darkest;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  display: flex;
+}
+
+#str {
+  width: 800px;
+  padding: 20px;
+  height: auto;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+  margin: 0 auto;
+  color: $light;
+  font-weight: bold;
+}
+
+#str{
+  @include breakpoint-down(small){
+    font-size: 50px;
+    width: 400px;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+.flexpre {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

@@ -1,0 +1,60 @@
+#footer {
+  background: $darkest;
+  color: $verylight;
+  padding: 1rem 5rem;
+  justify-content: space-around;
+}
+
+.copy {
+  text-align: center;
+  padding: 1rem;
+  background: $darkest;
+  color: $verylight;
+  margin: 0;
+}
+.footer {
+  flex: 1;
+  margin: 0 1rem 0 4rem;
+  text-align: left;
+  & i {
+    text-align: left;
+  }
+  & h3 {
+    text-align: left;
+  }
+  & ul {
+    padding: 0;
+    text-align: left;
+  }
+  & li{
+    list-style: none;
+    line-height: 1.8;
+  }
+  & a{
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }  
+}
+.footer__menu a {
+  margin: 0;
+}
+.fab {
+  color: $light;
+}
+
+i.far.fa-envelope, 
+i.fas.fa-phone-alt {
+  margin-right: 1rem;
+}
+
+.footer__menu a {
+  margin: 0;
+  display: block;
+}
+
+#footer.flex {
+  @include breakpoint-down (small) {
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+}

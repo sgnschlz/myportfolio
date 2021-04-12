@@ -1,0 +1,141 @@
+#portfolio {
+  background: $verylight;
+  padding: 5rem 5rem 15rem 5rem;
+}
+.about.about__me.my__work {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 70%;
+  margin: auto; 
+}
+.portfolio__img img{
+  width: 75%;
+  margin-left: 6rem;
+  margin-top: 26rem;
+  padding-bottom: 10rem;
+}
+.viewlive {
+  margin-left: 28rem;
+  margin-top: -22rem;
+  text-transform: uppercase;
+  // letter-spacing: 1rem;
+  width: 100%;
+  padding-bottom: 5rem;
+  span.letterspacing {
+    letter-spacing: 1rem;
+  }
+  i.fas.fa-external-link-alt {
+    margin-left: 0.5rem;
+}
+  a {
+    z-index: 2;
+    position: relative;
+  }
+}
+
+
+.portfolio__ul {
+  margin-top: 3rem;
+  height: 100%;
+  li{
+      line-height: 3;
+    font-size: 1rem;
+  }
+}
+
+.portfolio__transform {
+  margin-top: 0;
+}
+// .scratch {
+//   position: relative;
+//   max-width: 750px;
+//   font-size: 2rem;
+// }
+
+h1.scratch:before{
+margin-top: 1px;
+}
+
+h1.aboutme.scratch {
+  margin-left: 9rem;
+  width: 730px;
+  &:before{
+    margin-right: -2rem;
+  }
+}
+.flex__portfolio {
+  display: flex;
+}
+
+.flex__portfolio {
+  @include breakpoint-down (medium) {
+    flex-direction: column-reverse;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+}
+
+section#portfolio {
+  @include breakpoint-down (medium) {
+    padding: 5rem 4rem 15rem 4rem;
+  }
+}
+
+.viewlive {
+  @include breakpoint-down (medium) {
+    margin-top: -8rem;
+    margin-left: 15rem;
+  }
+}
+
+.viewlive {
+  @include breakpoint-down (small) {
+    margin-top: -8rem;
+    margin-left: 3rem;
+  }
+}
+
+.viewlive span.letterspacing {
+  @include breakpoint-down (small) {
+  letter-spacing: 0.5rem;
+}
+}
+
+.about.about__me.my__work{
+  @include breakpoint-down (medium) {
+    width: 100%;
+  }
+}
+
+h1.aboutme.scratch {
+  @include breakpoint-down (medium){
+    margin-left: 2rem;
+  }
+}
+
+h1.aboutme.scratch {
+  @include breakpoint-down (small){
+    width: 100%;
+  }
+}
+
+.portfolio__img img {
+  @include breakpoint-down (medium) {
+    // width: 60%;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    // padding-bottom: 5rem;
+  }
+}
+
+.portfolio__transform {
+  @include breakpoint-down (medium) {
+    margin-top: -10rem;
+  }  
+}
+
+h1.aboutme.scratch:before {
+  @include breakpoint-down (medium){
+    margin-right: 1rem;
+  } 
+}

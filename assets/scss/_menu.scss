@@ -1,0 +1,129 @@
+.header {
+  //hamburger open styles
+
+  &.open {
+    .header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+
+    }
+  }
+    nav.flex.flex-jc-sb.flex-ai-c.container {
+      background: $verylight;
+      padding: 1rem;
+      margin-left: 0;
+      margin-right: 0;
+    }
+}
+
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-right: 6rem;
+    z-index: 1;
+  }
+
+  &__logo {
+    img {
+      width: 11.35rem;
+      height: 1.75rem;
+    }
+  }
+
+  &__toggle {
+    //mobile menu toggle
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $darkest;
+      transition: all 400ms ease-in-out;
+      transform-origin: 3px 2px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__menu {
+    //mobile menu
+    background: $verylight;
+    padding: 1.256rem;
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    z-index: 9;
+
+    a {
+      display: block;
+      color: $darkest;
+      padding: 0.625rem;
+      font-weight: 700;
+      text-align: center;
+      &:hover {
+        color: $dark;
+        transition: color 200ms ease-in-out;
+      }
+      &.active {
+        color: $dark;
+      }
+    }
+  }
+
+  &__links,
+  &__socialmedia {
+    //navigation bar
+    a {
+      position: relative;
+      color: $darkest;
+      font-weight: 700;
+
+      &:hover {
+        color: $dark;
+        transition: color 200ms ease-in-out;
+      }
+      &.active {
+        color: $dark;
+      }
+    }
+  }
+
+  &__links {
+    a:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+}
+
+a#btnHamburger {
+  padding-left: 1rem;
+}
+
+// .burger .burger__line:first-child {
+//   width: 80%;
+//   margin-top: 9.5px;
+// }
+// .burger .burger__line:nth-child(2) {
+//   width: 65%;
+//   float: left;
+// }
+// .burger .burger__line:last-child {
+//   width: 40%;
+// }
+// .burger:hover .burger__line:first-child,
+// .burger:hover .burger__line:last-child,
+// .burger:hover .burger__line:nth-child(2) {
+//   width: 100% !important;
+// }

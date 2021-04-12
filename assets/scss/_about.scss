@@ -1,0 +1,93 @@
+section#about {
+  background-color: $verylight;
+  margin: 0;
+  padding: 4rem 7rem 12rem 7rem;
+}
+.aboutme:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: $darkest;
+  float: left;
+  margin-right: 20px;
+  margin-top: 17px;
+}
+.about__me h2 {
+  color: $alsolight;
+  opacity: 0.2;
+  font-weight: 700;
+  font-size: 7rem;
+  margin: 1rem;
+}
+
+h1.aboutme {
+  font-size: 2rem;
+  margin-top: -4rem;
+
+  &.aboutme:before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #1e212d;
+    float: left;
+    margin-right: 20px;
+    margin-top: 27px;
+  }
+}
+.about__me {
+  flex: 1;
+}
+.about__p {
+  flex: 2;
+  padding-top: 13rem;
+  p {
+    padding-left: 5rem;
+  }
+  li {
+    list-style: none;
+  }
+}
+.about {
+  margin: 1rem 0;
+}
+
+.transform {
+  transform: rotate(90deg);
+  -webkit-transform-origin: left top 0;
+  -ms-transform-origin: left top 0;
+  transform-origin: left top 0;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  margin-top: -5rem;
+  width: 100px;
+}
+
+section#about {
+  @include breakpoint-down (medium) {
+    flex-direction: column;
+    padding: 15rem 1rem 6rem 2rem;
+    margin-top: 5rem;
+  }
+
+}
+
+.about__p {
+  @include breakpoint-down (medium) {
+    padding-top: 0;
+
+  }
+}
+
+.about__p p {
+  @include breakpoint-down (medium) {
+  padding-left: 2rem;
+}
+}
+
+section#about {
+@include breakpoint-down (small){
+  padding: 15rem 1rem 8rem 2rem;
+}
+}
